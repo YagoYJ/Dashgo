@@ -11,6 +11,7 @@ const Chart = dynamic(() => import("react-apexcharts"), {
 });
 
 const apexProps: Props = {
+  type: "area",
   options: {
     chart: {
       toolbar: {
@@ -90,7 +91,7 @@ export default function Dashboard() {
             <Text fontSize="lg" mb="4">
               Taxa de abertura
             </Text>
-            <Chart {...apexProps} type="area" height={160} />
+            <Chart {...apexProps} height={160} />
           </Box>
         </SimpleGrid>
       </Flex>
